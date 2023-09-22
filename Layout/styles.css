@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-color:burlywood;
+    height: 80vh;
+}
+/*---------HEADER-------*/
+.header{
+    background-color: cadetblue;
+    display: flex;
+    justify-content:space-between;
+}
+
+.header__logo{
+    background-color: coral;
+    margin: 1rem;
+}
+
+.header__nav{
+    background-color: coral;
+    margin: 1rem;
+    
+    
+}
+
+.header__nav-list{
+    list-style: none;
+    display: flex;
+}
+
+.header__nav-item{
+    margin: 1rem
+}
+
+
+.footer{
+    background-color: yellowgreen;
+}
+

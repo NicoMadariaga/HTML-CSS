@@ -1,0 +1,37 @@
+.inline,
+.block,
+.inline-block,
+.list-item {
+    background-color:rgb(243, 204, 146);
+}
+
+.inline > div {
+    background-color: green;
+    display: inline;
+}
+
+.block > div {
+    background-color: chocolate;
+    margin-top: 0.5rem;
+}
+
+.inline-block > div {
+    background-color:aqua;
+    margin: 0.5rem;
+    display: inline-block;
+    height: 3rem;
+    width: 5rem;
+    text-align: center;
+}
+
+.menu{
+    background-color:blueviolet;
+    margin: 1rem;
+    display: inline-block;
+}
+
+.list-item > ul li{
+    background-color: cyan;
+    margin: 1rem;
+}
+
