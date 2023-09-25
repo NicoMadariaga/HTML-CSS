@@ -1,29 +1,38 @@
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.main{
-    background-color:burlywood;
-    height: 80vh;
+html{
+    font-size: 62,5%;
 }
+
+body {
+    /* height: 100%; */
+}
+
 /*---------HEADER-------*/
 .header{
     background-color: cadetblue;
     display: flex;
     justify-content:space-between;
+    width: 100vw;
+    height: 10vh;
+
 }
 
 .header__logo{
     background-color: coral;
     margin: 1rem;
+    display: flex;
+    align-items: center;
 }
 
 .header__nav{
     background-color: coral;
     margin: 1rem;
-    
-    
+
 }
 
 .header__nav-list{
@@ -34,9 +43,35 @@
 .header__nav-item{
     margin: 1rem
 }
+/*---------HEADER-------*/
 
+/*---------CONTENT-------*/
+.content {
+    display: flex;
+    width: 100%;
+
+}
+
+.content > .main{
+    background-color:burlywood;
+    height: 35rem;
+    width: 85%;
+}
+
+.content > .aside {
+    background-color: chartreuse;
+    width: 15%;
+}
 
 .footer{
     background-color: yellowgreen;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer__social-link {
+    margin: 1rem;
 }
 
