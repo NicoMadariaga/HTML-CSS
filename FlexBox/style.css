@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 6rem;
+    text-align: center;
+}
+h2 {
+    font-size: 4rem;
+    text-align: center;
+}
+h3 {
+    font-size: 3rem;
+    text-align: center;
+    color: antiquewhite;
+}
+
+.elemento {
+    background-color: blue;
+    height: 6rem;
+    width: 6rem;
+    margin: 0.5rem;
+    color: aliceblue;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+.flex_direction,
+.justify_content,
+.flex_grow{
+    background-color: aqua;
+    margin: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-wrap: wrap; /*Para que el contenido baje si es necesario y no se salga del contenedor*/
+    justify-content: space-around;
+    border-radius: 2rem;
+}
+
+/*-------Flex-Direction-------*/
+.fd_container{
+    background-color: blueviolet;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    width: 100%;
+}
+
+.fd_container > div{
+    display: flex;
+}
+.rr_container{
+    flex-direction: row-reverse;
+}
+.column_conteiner{
+    flex-direction: column;
+}
+.cr_conteiner{
+    flex-direction: column-reverse;
+}
+
+/*-------Justify-Content-------*/
+.jc_container{
+    background-color: blueviolet;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    width: 100%;
+}
+
+.jc_container > div{
+    display: flex;
+}
+
+.flex_start{
+    justify-content: flex-start;
+}
+.flex_end{
+    justify-content: flex-end;
+}
+.center{
+    justify-content: center;
+}
+.space_between{
+    justify-content: space-between;
+}
+.space_around{
+    justify-content:space-around;
+}
+
+/*-------Flex-grow-------*/
+.fg_container{
+    background-color: blueviolet;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    width: 100%;
+}
+
+.fg_container > div{
+    display: flex;
+}
+.uno_container > .e1{
+    background-color: brown;
+    flex-grow: 1;
+}
+.dos_container > .e2{
+    background-color: brown;
+    flex-grow: 1;
+}
+.tres_container > .e3{
+    background-color: brown;
+    flex-grow: 1;
+}
+.trece_container .e1,
+.trece_container .e3 {
+    background-color: brown;
+    flex-grow: 1;
+}
