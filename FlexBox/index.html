@@ -5,125 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 600px)">
-    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 900px)">
+    <!-- Links para las fuentes -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <title>FlexBox</title>
 </head>
 <body>
-    <!-- Flex-Direction -->
-    <h2>Flex-Direction</h2>
-    <div class="flex_direction">
-        <div class="fd_container">
-            <h3>Row</h3>
-            <div class="row_container">
-                <div class="elemento">1</div>
-                <div class="elemento">2</div>
-                <div class="elemento">3</div>
+    <header class="header">
+        <!-- <div class="header__logo">
+            <img src="logo.png" alt="Logo de la empresa">
+        </div> -->
+        <h1>FlexBox</h1>
+        <!-- <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Inicio</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Acerca de</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Servicios</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Contacto</a></li>
+            </ul>
+        </nav> -->
+    </header>
+    <main>
+        <article>
+        <!-- Flex-Direction -->
+            <h2>Flex-Direction</h2>
+            <div class="flex_direction">
+                <div class="fd_container">
+                    <h3>Row</h3>
+                    <div class="row_container">
+                        <div class="elemento">1</div>
+                        <div class="elemento">2</div>
+                        <div class="elemento">3</div>
+                    </div>
+                </div>
+                <div class="fd_container">
+                    <h3>Row-reverse</h3>
+                    <div class="rr_container">
+                        <div class="elemento">1</div>
+                        <div class="elemento">2</div>
+                        <div class="elemento">3</div>
+                    </div>
+                </div>
+                <div class="fd_container">
+                    <h3>Column</h3>
+                    <div class="column_conteiner">
+                        <div class="elemento">1</div>
+                        <div class="elemento">2</div>
+                        <div class="elemento">3</div>
+                    </div>
+                </div>
+                <div class="fd_container">
+                    <h3>C -reverse</h3>
+                    <div class="cr_conteiner">
+                        <div class="elemento">1</div>
+                        <div class="elemento">2</div>
+                        <div class="elemento">3</div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="fd_container">
-            <h3>Row-reverse</h3>
-            <div class="rr_container">
-                <div class="elemento">1</div>
-                <div class="elemento">2</div>
-                <div class="elemento">3</div>
+        </article>
+        <!-- Justify-Content -->
+        <article>
+            <h2>Justify-Content</h2>
+            <div class="justify_content">
+                <div class="jc_container">
+                    <h3>Flex-start</h3>
+                    <div class="flex_start">
+                        <div class="elemento">1</div>
+                        <div class="elemento">2</div>
+                        <div class="elemento">3</div>
+                    </div>
+                </div>
+                <div class="jc_container">
+                    <h3>Flex-end</h3>
+                    <div class="flex_end">
+                        <div class="elemento">1</div>
+                        <div class="elemento">2</div>
+                        <div class="elemento">3</div>
+                    </div>
+                </div>
+                <div class="jc_container">
+                    <h3>Center</h3>
+                    <div class="center">
+                        <div class="elemento">1</div>
+                        <div class="elemento">2</div>
+                        <div class="elemento">3</div>
+                    </div>
+                </div>
+                <div class="jc_container">
+                    <h3>Space-between</h3>
+                    <div class="space_between">
+                        <div class="elemento">1</div>
+                        <div class="elemento">2</div>
+                        <div class="elemento">3</div>
+                    </div>
+                </div>
+                <div class="jc_container">
+                    <h3>Space-around</h3>
+                    <div class="space_around">
+                        <div class="elemento">1</div>
+                        <div class="elemento">2</div>
+                        <div class="elemento">3</div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="fd_container">
-            <h3>Column</h3>
-            <div class="column_conteiner">
-                <div class="elemento">1</div>
-                <div class="elemento">2</div>
-                <div class="elemento">3</div>
-            </div>
-        </div>
-        <div class="fd_container">
-            <h3>Column-reverse</h3>
-            <div class="cr_conteiner">
-                <div class="elemento">1</div>
-                <div class="elemento">2</div>
-                <div class="elemento">3</div>
-            </div>
-        </div>
-    </div>
+        </article>
 
-    <!-- Justify-Content -->
-    <h2>Justify-Content</h2>
-    <div class="justify_content">
-        <div class="jc_container">
-            <h3>Flex-start</h3>
-            <div class="flex_start">
-                <div class="elemento">1</div>
-                <div class="elemento">2</div>
-                <div class="elemento">3</div>
+        <!-- Flex-Grow -->
+        <article>
+            <h2>Flex-Grow</h2>
+            <div class="flex_grow">
+                <div class="fg_container">
+                    <h3>1 Con más espacio adicional</h3>
+                    <div class="uno_container">
+                        <div class="elemento e1">1</div>
+                        <div class="elemento e2">2</div>
+                        <div class="elemento e3">3</div>
+                    </div>
+                </div>
+                <div class="fg_container">
+                    <h3>2 Con más espacio adicional</h3>
+                    <div class="dos_container">
+                        <div class="elemento e1">1</div>
+                        <div class="elemento e2">2</div>
+                        <div class="elemento e3">3</div>
+                    </div>
+                </div>
+                <div class="fg_container">
+                    <h3>3 Con más espacio adicional</h3>
+                    <div class="tres_container">
+                        <div class="elemento e1">1</div>
+                        <div class="elemento e2">2</div>
+                        <div class="elemento e3">3</div>
+                    </div>
+                </div>
+                <div class="fg_container">
+                    <h3>1 y 3 Con más espacio adicional</h3>
+                    <div class="trece_container">
+                        <div class="elemento e1">1</div>
+                        <div class="elemento e2">2</div>
+                        <div class="elemento e3">3</div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="jc_container">
-            <h3>Flex-end</h3>
-            <div class="flex_end">
-                <div class="elemento">1</div>
-                <div class="elemento">2</div>
-                <div class="elemento">3</div>
-            </div>
-        </div>
-        <div class="jc_container">
-            <h3>Center</h3>
-            <div class="center">
-                <div class="elemento">1</div>
-                <div class="elemento">2</div>
-                <div class="elemento">3</div>
-            </div>
-        </div>
-        <div class="jc_container">
-            <h3>Space-between</h3>
-            <div class="space_between">
-                <div class="elemento">1</div>
-                <div class="elemento">2</div>
-                <div class="elemento">3</div>
-            </div>
-        </div>
-        <div class="jc_container">
-            <h3>Space-around</h3>
-            <div class="space_around">
-                <div class="elemento">1</div>
-                <div class="elemento">2</div>
-                <div class="elemento">3</div>
-            </div>
-        </div>
-    </div>
-    <!-- Flex-Grow -->
-    <h2>Flex-Grow</h2>
-    <div class="flex_grow">
-        <div class="fg_container">
-            <h3>1 Con más espacio adicional</h3>
-            <div class="uno_container">
-                <div class="elemento e1">1</div>
-                <div class="elemento e2">2</div>
-                <div class="elemento e3">3</div>
-            </div>
-        </div>
-        <div class="fg_container">
-            <h3>2 Con más espacio adicional</h3>
-            <div class="dos_container">
-                <div class="elemento e1">1</div>
-                <div class="elemento e2">2</div>
-                <div class="elemento e3">3</div>
-            </div>
-        </div>
-        <div class="fg_container">
-            <h3>3 Con más espacio adicional</h3>
-            <div class="tres_container">
-                <div class="elemento e1">1</div>
-                <div class="elemento e2">2</div>
-                <div class="elemento e3">3</div>
-            </div>
-        </div>
-        <div class="fg_container">
-            <h3>1 y 3 Con más espacio adicional</h3>
-            <div class="trece_container">
-                <div class="elemento e1">1</div>
-                <div class="elemento e2">2</div>
-                <div class="elemento e3">3</div>
-            </div>
-        </div>
+        </article>
+    </main>
 </body>
 </html>

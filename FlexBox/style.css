@@ -5,12 +5,14 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5%
 }
 
 h1 {
     font-size: 6rem;
+    font-family: 'Permanent Marker', cursive;
     text-align: center;
+    color: beige;
 }
 h2 {
     font-size: 4rem;
@@ -21,6 +23,25 @@ h3 {
     text-align: center;
     color: antiquewhite;
 }
+
+article{
+    width: 100%;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header{
+    display: flex;
+    background-color: darkslategrey;
+    height: 10rem;
+    margin-bottom: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .elemento {
     background-color: blue;
@@ -99,6 +120,7 @@ h3 {
 }
 
 /*-------Flex-grow-------*/
+
 .fg_container{
     background-color: blueviolet;
     padding: 1rem;
