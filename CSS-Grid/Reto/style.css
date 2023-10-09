@@ -1,0 +1,16 @@
+.container{
+    display: grid;
+    background-color: white;
+    border: solid red;
+    grid-auto-columns: 100px;
+    grid-template-rows: 100px 100px 100px;
+    grid-auto-flow: column;
+    gap: 50px
+}
+.item{
+    background-color: chartreuse;
+    border: solid darkgreen;
+    font-size: 5rem;
+    color:darkgreen;
+    text-align: center;
+}
