@@ -1,0 +1,13 @@
+.tablero{
+    border: solid 1px black;
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    grid-template-rows: repeat(8, 100px);
+    margin: auto;
+    width: 800px;
+}
+
+.negro{
+    background-color: black;
+    color: aliceblue;
+}
