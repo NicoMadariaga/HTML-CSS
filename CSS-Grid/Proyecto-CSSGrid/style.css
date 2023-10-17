@@ -1,0 +1,51 @@
+html{
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 2rem;
+}
+
+h1{
+    margin: auto;
+    font-size: 3em;
+    font-family: 'Tilt Neon', sans-serif;
+    color: darkslategrey;
+}
+
+.hero{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: minmax(300px, 600px);
+    margin: auto;
+}
+.hero__info{
+    display: grid;
+    justify-items: center;
+}
+.hero__info > p{
+    margin: 0rem;
+    font-size: 1.125em;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    max-width: 500px;
+    word-wrap: break-word; 
+}
+.hero__img{
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+    margin-top: 1rem;
+}
+.hero__button{
+    height: 2.5rem;
+    width: 10rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    background-color: #FF6B1A;
+    border: #FF6B1A solid;
+    color: antiquewhite;
+    font-size: 1.125em;
+}
