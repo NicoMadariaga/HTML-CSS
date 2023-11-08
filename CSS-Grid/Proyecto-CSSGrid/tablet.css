@@ -1,15 +1,12 @@
-h1{
-    font-size: 5rem;
-}
-.hero{
-    grid-template-columns: repeat(2,minmax(300px, 600px));
-}
-
-.hero__info > p{
-    font-size: 2rem;
-}
 .hero__button{
     height: 3rem;
     width: 15rem;
     font-size: 1.5em;
+}
+.services__grid{
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.services-video{
+    grid-row: span 2;
+    grid-column: span 2;
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 600px)">
+    <link rel="stylesheet" href="tablet.css" media="screen and (min-width: 650px)">
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 800px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,19 +18,27 @@
     <header class="hero">
         <div class="hero__info">
             <h1>Check the <br> Best Food</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quis? Deserunt quo sint autem, illum cum
-                nihil rerum non a iure doloribus.
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quis?
             </p>
-            <button type="button" class="hero__button">Book A Table -></button>
+            <button type="button" class="hero__button">Book A Table</button>
         </div>
         <picture>
             <source media="(min-width: 1000px)" srcset="./img/hero.png">
-            <source media="(min-width: 600px)" srcset="./img/hero-medium.png">
+            <source media="(min-width: 800px)" srcset="./img/hero-medium.png">
             <img class="hero__img" src="./img/hero-small.png" alt="Plato de pasta con salsa y vegetales">
         </picture>
     </header>
     <main>
-
+        <section class="services">
+            <h2 class="services__title">Our Services</h2>
+            <div class="services__grid">
+                <img src="./img/video.png" alt="Video de tres platos con pasta" class="services__grid-item services-video">
+                <img src="./img/dish1.png" alt="Imagen de un plato de pastas" class="services__grid-item">
+                <img src="./img/dish2.png" alt="Imagen de un plato de pastas" class="services__grid-item">
+                <img src="./img/dish3.png" alt="Imagen de un plato de pastas" class="services__grid-item">
+                <img src="./img/dish4.png" alt="Imagen de un plato de pastas" class="services__grid-item">
+            </div>
+        </section>
     </main>
 </body>
 
