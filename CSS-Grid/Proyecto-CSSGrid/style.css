@@ -18,7 +18,7 @@ h1{
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: minmax(2fr, 3fr);
+    grid-template-columns: minmax(300px, 810px);
     margin: auto;
 }
 .hero__info{
