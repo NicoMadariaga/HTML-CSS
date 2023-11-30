@@ -14,6 +14,7 @@ h1,h2,h3{
 }
 h2{
     font-size: 2em;
+    margin-bottom: 3rem;
 }
 
 li{
@@ -94,4 +95,25 @@ img{
     color: aliceblue;
     border-bottom-right-radius: 1rem;
     /* border-bottom-left-radius: 1rem; */
+}
+
+
+/* ****NOSOTROS**** */
+.nosotros{
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center; */
+    margin-top: 5rem;
+    height: 20rem;
+    background-image: linear-gradient(to right, transparent 50%, #037bc0 50%), url(../img/nosotros.jpg);
+    background-size: 100%, 50rem;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.nosotros__contenedor{
+    padding-top: 2rem;
+    flex-basis: 47%;
+    padding-right: 10rem; /* Ajusta el espacio a la derecha */
+    box-sizing: border-box; /* Incluye el relleno en la dimensión total del elemento */
+    color:#fff;
 }
