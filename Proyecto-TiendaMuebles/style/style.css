@@ -16,6 +16,9 @@ h2{
     font-size: 2em;
     margin-bottom: 3rem;
 }
+h3{
+    font-size: 1.5rem;
+}
 
 li{
     list-style: none;    
@@ -116,4 +119,40 @@ img{
     padding-right: 10rem; /* Ajusta el espacio a la derecha */
     box-sizing: border-box; /* Incluye el relleno en la dimensión total del elemento */
     color:#fff;
+}
+
+
+/* ****PRODUCTOS**** */
+.productos{
+    margin: 5rem 20rem;
+}
+.productos > h2{
+    text-align: center;
+}
+
+.producto{
+    background-color: #037bc0;
+    text-align: center;
+    color: aliceblue;
+}
+.producto__precio{
+    font-size: 1.5em;
+    font-weight: 900;
+}
+.producto__texto{
+    padding: 2rem;
+}
+.producto button{
+    background-color: #8cbc00;
+    display: block;
+    width: 100%;
+    border: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    transition: background-color .3s ease-out;
+}
+.producto button:hover{
+    background-color: #769c02;
 }
