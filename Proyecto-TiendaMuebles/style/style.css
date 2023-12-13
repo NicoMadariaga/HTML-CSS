@@ -280,3 +280,8 @@ main{
     width: 50%;
     margin-top: 5rem;
 }
+
+/* ****GALERIA**** */
+.contenedor__galeria a{
+    padding: 0;
+}
