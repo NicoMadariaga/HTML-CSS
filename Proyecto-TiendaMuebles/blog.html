@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&family=Permanent+Marker&family=Rubik:wght@400;600&family=Tilt+Neon&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans&family=Permanent+Marker&family=Rubik:wght@400;600;700&family=Tilt+Neon&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="/style/style.css">
     <link rel="stylesheet" href="/style/normalize.css">
@@ -33,11 +33,11 @@
     </header>
 
 
-    <main>
+    <main class="main__blog">
+        <h2 class="text-center">Nuestro Blog</h2>
 
         <section class="contenedor__blog">
-            <h2>Nuestro Blog</h2>
-
+            
             <div class="blog">
                 
                 <article class="blog__entrada">
@@ -62,11 +62,45 @@
                             modi necessitatibus reiciendis, quas unde?
                         </p>
                     </div>
+
+                    <a href="/entrada.html">
+                        <button type="button" class="boton max-width-30">LEER</button>
+                    </a>
+
+                </article>
+
+                <article class="blog__entrada">
+                    <h2>Titulo Blog</h2>
+
+                    <div class="entrada__img">
+                        <img src="/img/galeria_01.jpg" alt="Imagen del block">
+                    </div>
+
+                    <div class="entrada__meta">
+                        <p>Fecha: <span>01 de Enero del 2023</span></p>
+                        <p>Escrito por: <span>TiendaMubles</span></p>
+                    </div>
+
+                    <div class="entrada__texto">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, aperiam laborum. Minus
+                            voluptate soluta laboriosam dolore quibusdam suscipit iusto saepe atque ducimus, excepturi
+                            ullam quidem quaerat quos rem non voluptas?
+                        </p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque dolore sequi deleniti id omnis
+                            dicta eius corrupti commodi distinctio iste nesciunt debitis reprehenderit fugiat pariatur
+                            modi necessitatibus reiciendis, quas unde?
+                        </p>
+                    </div>
+
+                    <a href="/entrada.html">
+                        <button type="button" class="boton max-width-30">LEER</button>
+                    </a>
+
                 </article>
             
             </div>
 
-            <aside>
+            <aside class="aside__blog">
                 <h3>Otras Entradas de blog</h3>
                 <ul>
                     <li><a href="entrada.html">Guía de Colores</a></li>

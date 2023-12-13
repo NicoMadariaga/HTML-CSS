@@ -17,9 +17,11 @@ h2{
     margin-bottom: 3rem;
 }
 h3{
-    font-size: 1.5rem;
+    font-size: 1.5eem;
 }
-
+p{
+    font-size: 1em;
+}
 li{
     list-style: none;    
 }
@@ -38,6 +40,27 @@ img{
 main{
     margin-bottom: 5rem;
 }
+
+.text-center{
+    text-align: center;
+}
+
+.boton{
+    background-color: #8cbc00;
+    display: block;
+    width: 100%;
+    border: none;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1em;
+    padding: 1rem;
+    transition: background-color .3s ease-out;
+}
+.boton:hover{
+    background-color: #769c02;
+}
+
 /* ****HEADER**** */
 .header__titulo{
     text-align: center;
@@ -84,10 +107,6 @@ main{
     justify-items: center;
     justify-content: center;
 }
-.categorias > h2{
-    text-align: center;
-    /* font-size: 2em; */
-}
 .categorias a
 {
     text-align: center;
@@ -125,9 +144,6 @@ main{
 .productos{
     margin: 5rem 15rem;
 }
-.productos > h2{
-    text-align: center;
-}
 .producto{
     background-color: #037bc0;
     text-align: center;
@@ -140,7 +156,7 @@ main{
 .producto__texto{
     padding: 2rem 1rem;
 }
-.producto button{
+/* .producto button{
     background-color: #8cbc00;
     display: block;
     width: 100%;
@@ -154,7 +170,7 @@ main{
 }
 .producto button:hover{
     background-color: #769c02;
-}
+} */
 .lista-productos{
     display: grid;
     grid-template-columns: repeat(6,1fr);
@@ -222,3 +238,45 @@ main{
 }
 
 /* ****PAGINA BLOG**** */
+.main__blog{
+    margin-top: 5rem;
+    width: 75%;
+    margin: auto;
+}
+.contenedor__blog{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+}
+.blog__entrada{
+    border-bottom: 1px solid #e1e1e1;
+    margin-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+/* Seleccionamos la ultima enmtrada */
+.blog__entrada:last-of-type{
+    border: none;
+}
+.entrada__meta{
+    display: flex;
+    justify-content: space-between;
+}
+.entrada__meta p{
+    font-weight: 700;
+}
+.entrada__meta span{
+    color: #037bc0;
+}
+.max-width-30{
+    max-width: 20rem;
+}
+.aside__blog{
+    margin-top: 1rem;
+}
+
+/* ****ENTRADA BLOG**** */
+.contenedor__entrada{
+    margin: auto;
+    width: 50%;
+    margin-top: 5rem;
+}
