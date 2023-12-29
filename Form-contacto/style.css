@@ -51,9 +51,6 @@ body {
   display: grid;
   grid-template-columns: 1fr;
 }
-/* .bloque {
-  grid-column: 1 / 3;
-} */
 .formulario input,
 .formulario button,
 .formulario textarea {
@@ -137,7 +134,4 @@ body {
   .bloque {
     grid-column: 1 / 3;
   }
-  /* .formulario button {
-    margin-top: 1rem;
-  } */
 }
