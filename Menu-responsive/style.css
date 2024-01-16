@@ -1,0 +1,92 @@
+/* ----------------GENERALES--------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/* ----------------GENERALES--------------- */
+
+.container {
+  background: radial-gradient(circle, rgba(98, 4, 102, 0.102), rgb(35, 4, 61) 90%), url("/imgHero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 10%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.5em;
+}
+.toggle {
+  font-size: 1.5em;
+  cursor: pointer;
+  border: none; /* Remove button border */
+  background: none; /* Remove button background */
+  padding: 0; /* Remove button padding */
+  justify-content: center;
+  height: 2.25rem;
+  width: 2.25rem;
+}
+
+/* ----------------MENU--------------- */
+.menu {
+  background-color: #23043d;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  height: 0;
+  overflow: hidden; /* Oculta el contenido que excede la altura */
+  transition: all .5s ease;
+}
+
+.menuOpen {
+  transition: height .5s ease-in-out; /* Agrega una transición suave */
+  height: 100vh; /* Establece una altura inicial */
+  pointer-events: auto;
+}
+.menu a {
+  color: #fff;
+  font-size: 1.7em;
+}
+.menu li {
+    margin: 0;
+    flex-grow: 1;
+    display: flex; /* Agrega esta propiedad */
+    justify-content: center;
+    align-items: center; /* Alinea verticalmente el contenido */
+    width: 100%;
+}
+.menu li:hover {
+    background-color: #4e0d6d;
+}
+/* ----------------FIN-MENU--------------- */
+
+/* ----------------TABLET--------------- */
+@media screen and (min-width: 768px) {
+  .container {
+    background: linear-gradient(to right, rgb(35, 4, 61) 30%, rgba(98, 4, 102, 0.1)), url("/imgHero2.svg");
+    background-size: contain;
+    background-position: right;
+  }
+}
