@@ -13,36 +13,49 @@ ul {
 }
 /* ----------------GENERALES--------------- */
 
-.container {
-  background: radial-gradient(circle, rgba(98, 4, 102, 0.102), rgb(35, 4, 61) 90%), url("/imgHero.png");
+/* ----------------HEADER--------------- */
+.header {
+  /* background: radial-gradient(
+      circle,
+      rgba(98, 4, 102, 0.102),
+      rgb(35, 4, 61) 90%
+    ),
+    url("/imgHero.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
+  background-color: rgb(35, 4, 61);
   height: 600px;
   display: flex;
   flex-direction: column;
-  color: #fff;
 }
 
-.header {
+/* ----------------NAV--------------- */
+.nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 10%;
+  height: 4rem;
+  padding: 1rem 0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+/* ----------------LOGO--------------- */
 .logo {
   cursor: pointer;
   color: #fff;
   font-size: 1.5em;
+  padding: 0 1rem;
 }
+
+/* ----------------TOGGLE--------------- */
 .toggle {
   font-size: 1.5em;
   cursor: pointer;
   border: none; /* Remove button border */
   background: none; /* Remove button background */
-  padding: 0; /* Remove button padding */
+  padding: 0 3rem; /* Remove button padding */
   justify-content: center;
   height: 2.25rem;
   width: 2.25rem;
@@ -50,43 +63,71 @@ ul {
 
 /* ----------------MENU--------------- */
 .menu {
-  background-color: #23043d;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: center; 
+  position: absolute; /* Stay in place */
+  top: 4rem; /* para que empiece debajo del header */
+  left: 0; /* Left of header */
+  width: 100%; /* Full width */
   height: 0;
-  overflow: hidden; /* Oculta el contenido que excede la altura */
-  transition: all .5s ease;
+  overflow: hidden; /* Oculta el contenido mientras esta inactivo*/
+}
+.menuOpen {
+  height: 100vh; /* Full height*/
+  transition: height 0.5s ease-in-out; /* Agrega una transición suave */
 }
 
-.menuOpen {
-  transition: height .5s ease-in-out; /* Agrega una transición suave */
-  height: 100vh; /* Establece una altura inicial */
-  pointer-events: auto;
+.menu li {
+  background-color: #4d0588;
+  text-align: center;
+  padding: 1rem 0;
+}
+.menu li:hover {
+  background-color: #4e0d6d;
 }
 .menu a {
   color: #fff;
   font-size: 1.7em;
 }
-.menu li {
-    margin: 0;
-    flex-grow: 1;
-    display: flex; /* Agrega esta propiedad */
-    justify-content: center;
-    align-items: center; /* Alinea verticalmente el contenido */
-    width: 100%;
-}
-.menu li:hover {
-    background-color: #4e0d6d;
-}
-/* ----------------FIN-MENU--------------- */
 
-/* ----------------TABLET--------------- */
+/* ----------------MEDIA QUERIES--------------- */
 @media screen and (min-width: 768px) {
-  .container {
-    background: linear-gradient(to right, rgb(35, 4, 61) 30%, rgba(98, 4, 102, 0.1)), url("/imgHero2.svg");
-    background-size: contain;
-    background-position: right;
+  .nav {
+    padding: 0;
   }
+  .menu {
+    position: static;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+  }
+  .menu li {
+    background-color: transparent;
+    padding: 0 1rem;
+  }
+  .menu li:hover {
+    font-size: 1.5rem;
+  }
+  .menu a {
+    font-size: 1.2em;
+  }
+  .toggle {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 800px;
+  }
+  .logo {
+    font-size: 2em;
+  }
+  .menu a {
+    font-size: 1.5em;
+  }
+  .nav {
+    padding:0 2rem;
+  }
+    
 }
